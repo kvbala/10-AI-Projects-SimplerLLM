@@ -1,7 +1,7 @@
 from SimplerLLM.language.llm import LLM,LLMProvider
 from SimplerLLM.tools.generic_loader import load_content
 
-llm_instance = LLM.create(provider=LLMProvider.OPENAI, model_name="gpt-4o")
+llm_instance = LLM.create(provider=LLMProvider.GEMINI, model_name="gemini-2.0-flash-lite")
 
 url = "https://www.youtube.com/watch?v=LJeZq8MymAs"
 
@@ -12,3 +12,4 @@ summarize_prompt = f"generate a bullet point summary for the following: {content
 generated_text = llm_instance.generate_response(prompt=summarize_prompt)
 
 print(generated_text)
+

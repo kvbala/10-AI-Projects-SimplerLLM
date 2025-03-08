@@ -1,5 +1,5 @@
 from SimplerLLM.language.llm import LLM,LLMProvider
-llm_instance = LLM.create(provider=LLMProvider.OPENAI, model_name="gpt-4o")
+llm_instance = LLM.create(provider=LLMProvider.GEMINI, model_name="gemini-2.0-flash")
 
 
 blog_title_generator_prompt = """I want you to act as a professional blog titles generator. 

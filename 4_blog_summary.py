@@ -1,7 +1,7 @@
 from SimplerLLM.language.llm import LLM,LLMProvider
 from SimplerLLM.tools.generic_loader import load_content
 
-llm_instance = LLM.create(provider=LLMProvider.OPENAI, model_name="gpt-4o")
+llm_instance = LLM.create(provider=LLMProvider.GEMINI, model_name="gemini-2.0-flash-lite")
 
 url = "https://learnwithhasan.com/create-ai-agents-with-python/"
 
